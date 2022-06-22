@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+.btn {
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    color: green;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(255 0 125/ .7);
+    transform: translateX(-100%);
+    transition: .3s cubic-bezier(.17, .67, .8, .08);
+}
+
+body.open .nav {
+    transform: translateX(0);
+}
+
+.nav ul {
+    padding: 40px;
+}
+
+.nav ul li {
+    margin-bottom: 2em;
+    list-style: none;
+}
+
+.nav ul li a {
+    color: #fff;
+}
